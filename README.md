@@ -20,3 +20,20 @@ Number of files found: 4
 Total number of lines: 77
 
 Average lines per file: 19.25
+
+## Testing
+To run the test code just run the following command in the code directory:
+`python test.py`
+
+The output of each of the tests is stored in the file `test_output.txt`
+
+The following types of tests are run:
+1. Non exsisting directory
+2. Empty directory
+3. Non existing file extension or no file with that extension
+4. Directory with files with just 1 line
+5. Directory with small sized files
+6. Directory with large files
+7. Directory with very large files
+8. Multiple directory levels or a recursive structure
+9. Tests with text, docx, xlsx and py files
