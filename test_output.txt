@@ -1,0 +1,209 @@
+**************************************************
+Testing Empty Directory:
+--------------------------------------------------
+No Files Present in Directory
+
+**************************************************
+**************************************************
+Testing Non-Existing Directory:
+--------------------------------------------------
+Invalid Directory
+
+**************************************************
+**************************************************
+Testing Multiple Empty Files:
+--------------------------------------------------
+./multiple-file-empty/file_1.txt 1
+./multiple-file-empty/file_2.txt 1
+./multiple-file-empty/file_3.txt 1
+./multiple-file-empty/file_4.txt 1
+./multiple-file-empty/file_5.txt 1
+./multiple-file-empty/file_6.txt 1
+./multiple-file-empty/file_7.txt 1
+./multiple-file-empty/file_8.txt 1
+================================
+================================
+Number of files found          8
+Total Number of Line           8
+Average lines per file         1.0
+
+**************************************************
+**************************************************
+Testing Multiple Large Files:
+--------------------------------------------------
+./multiple-large-small/file_1.txt 27715
+./multiple-large-small/file_2.txt 32158
+./multiple-large-small/file_3.txt 16039
+./multiple-large-small/file_4.txt 36345
+./multiple-large-small/file_5.txt 39869
+./multiple-large-small/file_6.txt 43266
+./multiple-large-small/file_7.txt 30746
+./multiple-large-small/file_8.txt 39578
+=================================
+=================================
+Number of files found          8
+Total Number of Line           265716
+Average lines per file         33214.5
+
+**************************************************
+**************************************************
+Testing Multiple Level Directory:
+--------------------------------------------------
+./multiple-level-directory/26/file_1.txt             1
+./multiple-level-directory/26/file_2.txt             1219
+./multiple-level-directory/26/file_3.txt             1
+./multiple-level-directory/26/file_4.txt             3167
+./multiple-level-directory/26/100/file_1.txt         1
+./multiple-level-directory/26/100/650/file_1.txt     1
+./multiple-level-directory/26/100/650/file_2.txt     3127
+./multiple-level-directory/26/100/650/file_3.txt     1
+./multiple-level-directory/26/100/650/file_4.txt     1076
+./multiple-level-directory/26/100/650/file_5.txt     1
+./multiple-level-directory/26/206/file_1.txt         1
+./multiple-level-directory/26/206/file_2.txt         3085
+./multiple-level-directory/26/206/file_3.txt         1
+./multiple-level-directory/26/206/file_4.txt         2770
+./multiple-level-directory/26/206/file_5.txt         1
+./multiple-level-directory/26/206/264/file_1.txt     1
+./multiple-level-directory/26/206/264/file_2.txt     4198
+./multiple-level-directory/26/206/264/file_3.txt     1
+./multiple-level-directory/26/206/674/file_1.txt     1
+./multiple-level-directory/26/206/674/file_2.txt     3565
+./multiple-level-directory/26/206/674/file_3.txt     1
+./multiple-level-directory/26/206/674/file_4.txt     2620
+./multiple-level-directory/26/206/674/316/file_1.txt 1
+./multiple-level-directory/26/206/674/316/file_2.txt 1295
+./multiple-level-directory/26/206/734/file_1.txt     1
+./multiple-level-directory/26/206/734/file_2.txt     3776
+./multiple-level-directory/26/206/734/file_3.txt     1
+./multiple-level-directory/26/206/734/file_4.txt     4111
+./multiple-level-directory/26/206/734/36/file_1.txt  1
+./multiple-level-directory/26/820/file_1.txt         1
+./multiple-level-directory/26/820/file_2.txt         2629
+./multiple-level-directory/26/820/file_3.txt         1
+./multiple-level-directory/26/820/file_4.txt         4334
+./multiple-level-directory/26/820/318/file_1.txt     1
+./multiple-level-directory/26/820/318/file_2.txt     3320
+./multiple-level-directory/26/820/318/file_3.txt     1
+./multiple-level-directory/26/820/318/file_4.txt     3992
+./multiple-level-directory/26/820/318/file_5.txt     1
+./multiple-level-directory/26/820/318/358/file_1.txt 1
+./multiple-level-directory/26/820/318/358/file_2.txt 1398
+====================================================
+====================================================
+Number of files found          40
+Total Number of Line           49705
+Average lines per file         1242.625
+
+**************************************************
+**************************************************
+Testing Multiple Small Doc Files:
+--------------------------------------------------
+./multiple-file-small-doc/file_1.docx 3903
+./multiple-file-small-doc/file_2.docx 1581
+./multiple-file-small-doc/file_3.docx 1877
+./multiple-file-small-doc/file_4.docx 1068
+./multiple-file-small-doc/file_5.docx 1468
+./multiple-file-small-doc/file_6.docx 2430
+./multiple-file-small-doc/file_7.docx 4637
+./multiple-file-small-doc/file_8.docx 3719
+=====================================
+=====================================
+Number of files found          8
+Total Number of Line           20683
+Average lines per file         2585.375
+
+**************************************************
+**************************************************
+Testing Multiple Small Excel Files:
+--------------------------------------------------
+./multiple-file-small-excel/file_1.xlsx  1417
+./multiple-file-small-excel/file_2.xlsx  3148
+./multiple-file-small-excel/file_3.xlsx  3153
+./multiple-file-small-excel/file_4.xlsx  1861
+./multiple-file-small-excel/file_5.xlsx  2904
+./multiple-file-small-excel/file_6.xlsx  1806
+./multiple-file-small-excel/file_7.xlsx  2770
+./multiple-file-small-excel/file_8.xlsx  2242
+./multiple-file-small-excel/file_9.xlsx  3519
+./multiple-file-small-excel/file_10.xlsx 2488
+./multiple-file-small-excel/file_11.xlsx 4045
+./multiple-file-small-excel/file_12.xlsx 4802
+./multiple-file-small-excel/file_13.xlsx 3594
+./multiple-file-small-excel/file_14.xlsx 1952
+./multiple-file-small-excel/file_15.xlsx 2586
+========================================
+========================================
+Number of files found          15
+Total Number of Line           42287
+Average lines per file         2819.133333333333
+
+**************************************************
+**************************************************
+Testing Multiple Small Files:
+--------------------------------------------------
+./multiple-file-small/file_1.txt 2867
+./multiple-file-small/file_2.txt 1308
+./multiple-file-small/file_3.txt 1335
+./multiple-file-small/file_4.txt 2665
+./multiple-file-small/file_5.txt 1917
+./multiple-file-small/file_6.txt 4863
+================================
+================================
+Number of files found          6
+Total Number of Line           14955
+Average lines per file         2492.5
+
+**************************************************
+**************************************************
+Testing Multiple Small Python Files:
+--------------------------------------------------
+./multiple-file-small-python/file_1.py 2377
+./multiple-file-small-python/file_2.py 4748
+./multiple-file-small-python/file_3.py 2632
+./multiple-file-small-python/file_4.py 2473
+./multiple-file-small-python/file_5.py 3288
+./multiple-file-small-python/file_6.py 4510
+./multiple-file-small-python/file_7.py 4660
+./multiple-file-small-python/file_8.py 3478
+======================================
+======================================
+Number of files found          8
+Total Number of Line           28166
+Average lines per file         3520.75
+
+**************************************************
+**************************************************
+Testing Multiple Very Large Files:
+--------------------------------------------------
+./multiple-very-large-small/file_1.txt 3361458
+./multiple-very-large-small/file_2.txt 4051237
+./multiple-very-large-small/file_3.txt 2444507
+./multiple-very-large-small/file_4.txt 2064203
+./multiple-very-large-small/file_5.txt 3743489
+./multiple-very-large-small/file_6.txt 4849188
+./multiple-very-large-small/file_7.txt 1617064
+======================================
+======================================
+Number of files found          7
+Total Number of Line           22131146
+Average lines per file         3161592.285714286
+
+**************************************************
+**************************************************
+Testing Empty Directory:
+--------------------------------------------------
+No Files Present in Directory
+
+**************************************************
+**************************************************
+Testing Single Empty File:
+--------------------------------------------------
+./single-file-empty/file1.txt 1
+=============================
+=============================
+Number of files found          1
+Total Number of Line           1
+Average lines per file         1.0
+
+**************************************************
