@@ -21,6 +21,12 @@ Total number of lines: 77
 
 Average lines per file: 19.25
 
+## Source Code
+
+The source code is in the `source/main.py` file. It contains two functions where the `files` function gets teh list of all files present with the given extension and the number of lines in each file. The `get_dir_file_details` function prints out all the information in the expected fashion and also calculates other details such as total number of files and total number of lines. 
+
+The code can be called with `-d` and `-e` arguments for specifying the directory and teh extension. These arguments default to the current directory and the `.txt` extension. 
+
 ## Testing
 To run the test code just run the following command in the code directory:
 `python test.py`
@@ -37,3 +43,4 @@ The following types of tests are run:
 7. Directory with very large files
 8. Multiple directory levels or a recursive structure
 9. Tests with text, docx, xlsx and py files
+
