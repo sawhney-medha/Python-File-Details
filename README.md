@@ -29,7 +29,7 @@ The code can be called with `-d` and `-e` arguments for specifying the directory
 
 If the directory specified does not exist then the output mentions *Invalid Directory* and if the directory is empty or does not have the files with the expected extension then the output prints the message - *No Files Present in the Directory*.
 
-The output is printe din a sorted fashion. 
+The output is printed in a sorted fashion. 
 
 ## Testing
 To run the test code just run the following command in the code directory:
