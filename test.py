@@ -11,9 +11,12 @@ class TestFileCountDetails(unittest.TestCase):
         Initializing class variables for storing output and printing
         '''
         super(TestFileCountDetails, self).__init__(*args, **kwargs)
+        # variable to store redirected output object
         self.output_obj = None
+        # variables to print line breaks
         self.linebreak_test_type = ["*"]
         self.linebreak_output = ["-"]
+        # output file
         self.output_file = "./test_output.txt"
         output = open(self.output_file,'w')
         output.close()
@@ -33,20 +36,27 @@ class TestFileCountDetails(unittest.TestCase):
         
     def print_test_output(self, test_name):
         '''
-        Function to print test output
+        Function to print test output on console as well as
+        store in an output file in a particular fashion
         '''
         self.print("".join(self.linebreak_test_type*50))
         self.print (test_name)
         self.print("".join(self.linebreak_output*50))
         self.print(self.output_obj.getvalue())
         self.print("".join(self.linebreak_test_type*50))
-        
     def print(self, text):
+        '''
+        Function to print test output on console as well as
+        store in an output file
+        '''
         output_file = open(self.output_file, 'a')
         print(text)
         output_file.write(text + "\n")
         output_file.close()
     def get_file_size(self,file_name):
+        '''
+        Function to get the file size of a file with its name
+        '''
         with open(file_name, 'r') as file_obj:
             line_count = 0
             for line_count,_ in enumerate(file_obj):
@@ -89,6 +99,7 @@ class TestFileCountDetails(unittest.TestCase):
         #testing empty directory
         self.redirect_output_store()
         test_dir = "./single-file-empty"
+        # creatinga. directory with a file in it
         os.makedirs(test_dir, exist_ok=True)
         with open(os.path.join(test_dir,'file1.txt'), 'w') as file_object:
             file_object.close()
@@ -109,6 +120,7 @@ class TestFileCountDetails(unittest.TestCase):
         #testing empty directory
         self.redirect_output_store()
         test_dir = "./multiple-file-empty"
+        # creating directory with a random number of files in it
         os.makedirs(test_dir, exist_ok=True)
         rand_file_num = random.randrange(2,10) 
         for i in range(1,rand_file_num):
@@ -145,9 +157,8 @@ class TestFileCountDetails(unittest.TestCase):
         main.get_dir_file_details(test_dir)
         self.redirect_output_normal() 
         self.print_test_output("Testing Multiple Small Files:")
+        # check the size of the first and the last file and check if it is present in output
         self.assertIn(os.path.join(test_dir,'file_1.txt'), self.output_obj.getvalue().strip())
-        #check number of lines = 1 for emptyfile
-        #print(self.output_obj.getvalue().split(" ")[1].split("\n")[0].strip())
         file_size = self.get_file_size(os.path.join(test_dir,'file_1.txt'))
         assert int(self.output_obj.getvalue().split(" ")[1].split("\n")[0].strip()) == file_size
         last_file_name = os.path.join(test_dir,f'file_{int(rand_file_num)-1}.txt')
@@ -175,6 +186,7 @@ class TestFileCountDetails(unittest.TestCase):
         main.get_dir_file_details(test_dir)
         self.redirect_output_normal() 
         self.print_test_output("Testing Multiple Large Files:")
+        # check the size of the first and the last file and check if it is present in output
         self.assertIn(os.path.join(test_dir,'file_1.txt'), self.output_obj.getvalue().strip())
         #check number of lines = 1 for emptyfile
         #print(self.output_obj.getvalue().split(" ")[1].split("\n")[0].strip())
