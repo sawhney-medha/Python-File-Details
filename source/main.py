@@ -19,8 +19,8 @@ def files(dir_name, filename_extension=".txt"):
             # check extension and all file to list if matching extension
             file_list.append(os.path.join(dir_name,file))# add full path with filename
             # calculating number of lines per file using enumerate
-            #enumerate does not load the entire file to memory so works well for large files
-            #better than using readLines()
+            # enumerate does not load the entire file to memory so works well for large files
+            # better than using readLines()
             with open(os.path.join(dir_name, file), 'r') as file_obj:
                 line_count = 0
                 for line_count,_ in enumerate(file_obj):
@@ -36,11 +36,13 @@ def get_dir_file_details(dir_name, filename_extension=".txt"):
     function to print details in the required format
     '''
     if os.path.exists(dir_name) is False:
+        # if no directory exists with that name
         print("Invalid Directory")
         return
     #get list of files with their respective lengths
     file_list, file_len_list = files(dir_name, filename_extension)
     if len(file_list)==0:
+        # no files with that extension
         print("No Files Present in Directory")
         return
     linebreak = ["="]
@@ -66,10 +68,10 @@ if __name__=="__main__":
     DIR_NAME = "./"
     FILENAME_EXTENSION =".txt"
     parser = argparse.ArgumentParser() # Initialize parser
-    # Adding optional argument
+    # Adding optional arguments
     parser.add_argument("-d", "--Directory", help = "File Directory")
     parser.add_argument("-e", "--Extension", help = "File Extension")
-    # Read arguments from command line
+    # Read arguments from command line call
     args = parser.parse_args()
     if args.Directory:
         DIR_NAME = args.Directory
